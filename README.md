@@ -1,2 +1,12 @@
 # Recursive-PurchaseTransToOrder
-Recursive-PurchaseTransToOrder
+Recursive-PurchaseTransToOrder (遞迴-採購單轉為訂購單)
+
+##  功能目的: 
+###### 		將採購單依照特定條件轉結為訂購單。
+
+##  功能說明:
+###### 		條件一:	每張訂購單的總金額不能大於 25,000,000
+######		條件二:	未轉訂購單的資料才要轉訂購單
+######		條件三:	報價單種類為 2-特殊報價單，需要進行分類
+######		條件四:	依照 [運送方式 ShipId], [報價單種類 QuotationType], [類別 Reg_Yn], [特報單類別 QuotationNo] 分類
+######		條件五:	特定機型有對應的特定數量，該訂單的數量不能超過該特定數量
